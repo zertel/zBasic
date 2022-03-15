@@ -1,0 +1,52 @@
+SORU
+• Sahip olduðum temanýn üst(header) ve alt(footer) kýsýmlarýný hangi dosyalara yerleþtirmeliyim? Neden iki dosya deðil de ilgili dört dosya var?
+CEVAP
+• zwork yapýsýnda header ve footer görüntüleme ayarlarý dinamik ve sayfa bazlýdýr. Bu yöntemle menüdeki istenilen sayfalarda üst banner veya menü gibi header bölümünü tamamen kaldýrýlabilir ve beraberinde temanýn tüm html kütüphaneleri yüklenmiþ olarak görüntülenebilir. O sebeple head.php dosyasý içinde sistemi yükleyen tüm kodlar barýnmalýdýr. "header.php" dosyasýnýn içinde ise yüklendiðinde gerçekten görüntülenen parçalar bulunmalýdýr. Fiziksel olarak (Logo,menü,banner) bulunan etiketler burada bulunmalý.
+
+ÖRNEK PARÇALAMA (Etiketlerden yola çýkarak uyarlayýnýz)
+
+"head.php" (Ýpucu: Yüklenince hiç bir þey gözükmez.)
+----------------------- 
+<!DOCTYPE html>
+<html>
+	<head>
+		... css
+		... js
+	</head>
+	<body>
+
+		<div class="body">
+-----------------------
+
+
+
+
+"header.php" (Yüklenince (logo,banner,menü vs) fiziksel header görünür)
+----------------------- 
+			<header>
+				...
+			</header>
+-----------------------
+
+
+
+
+"footer.php" (Yüklenince (linkler, iletiþim, kurucu vs) fiziksel footer görünür)
+----------------------- 
+			<footer>
+			</footer>
+-----------------------
+
+
+
+
+"foot.php" (Yüklenince hiç bir þey görünmez)
+----------------------- 
+		</div>
+		... js
+	</body>
+</html>
+-----------------------
+
+
+Not: Bu parçalama yöntemi ile istenilen sayfada sadece header, istenilen sayfada sadece footer veya istenilen sayfada sadece içerik görüntülemesi gerçekleþtirilebilir. Sadece "head.php" ve "foot.php" yüklendiðinde temanýn tüm ihtiyaçlarý yüklü bom boþ bir sayfa görüntülenir.	

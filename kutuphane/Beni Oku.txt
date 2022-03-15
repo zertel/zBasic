@@ -1,0 +1,7 @@
+ÝLK DEFA KULLANIYOR ÝSEN
+• Baðlantý bilgileri ve daha fazla ayarý barýndýran "örnek.zcon.php" dosyasýný "zcon.php" adýyla proje anadizinine kopyala.
+• Kütüphane klasör yolun farklý ise "zcon.php" dosyasýnýn en üstündeki "require(__DIR__.'/kutuphane/z/z.php');" kodunu kendi kütüphane klasötüne göre ayarla. ("__DIR__" php nin kendi özelliði. Bulunduðu dizini verir)
+
+GÜNCELLEME YAPIYOR ÝSEN
+• Projende "zcon.php" dosyasý kullanýyor isen kullandýðýn zcon ile "z" kütüphanesinin içindeki "örnek.zcon.php" dosyasý içeriðini karþýlaþtýr. Yeni eklenmiþ ayarlar var ise ihtiyacýn doðrultusunda dahil et.
+

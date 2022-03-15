@@ -1,0 +1,4 @@
+"Dashio" isimli admin tema ücretsiz olarak sahibinden temin edilmiştir.
+Temanın sahip bilgileri, kendi klasörü içerisindeki "Readme.txt" dosyasında mevcuttur.
+
+Tema sahibinin ayrıca belirttiği kaynaklar için "credits.txt" metin dostasını inceleyiniz.

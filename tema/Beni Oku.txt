@@ -1,0 +1,4 @@
+"Doob - Agency HTML Template" isimli kurumsal tema ücretsiz olarak sahibinden temin edilmiştir.
+Temanın sahip bilgileri, kendi klasörü içerisindeki "License.pdf" dosyasında mevcuttur.
+
+Tema sahibinin ayrıca belirttiği kaynaklar için "Credits.txt" metin dostasını inceleyiniz.
